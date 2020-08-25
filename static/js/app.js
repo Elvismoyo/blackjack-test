@@ -182,7 +182,7 @@ const blackJackHit = (currentPlay) =>{
     let cardImg = document.createElement('img');
     let randomCard = CARDS[Math.floor(Math.random() * 13)];
     
-    cardImg.src = 'static/cardsImg/'+randomCard+'.png';
+    cardImg.src = 'static/cardsPics/'+randomCard+'.png';
     document.querySelector(currentPlay['div']).appendChild(cardImg);
     hitSound.play();
     updateScore(randomCard, currentPlay)

@@ -15,7 +15,7 @@
     
 }
 .flex-blackjack-row-1, .flex-blackjack-row-2{
-    background: no-repeat center url('/static/images/57742104-red-color-carpet-texture.jpg');
+    background: no-repeat center url("../images/red-background-blackjack.jpg");
     background-size: cover;
     height: 100%;
     
