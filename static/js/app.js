@@ -247,7 +247,7 @@ const sleep = (ms) =>{
     document.querySelector('#blackjack-stand-btn').disabled = true;
     
     
-  
+    
         
         while(DEALER['score'] < 14){
             blackJackHit(DEALER);

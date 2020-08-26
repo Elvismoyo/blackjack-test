@@ -1,3 +1,2 @@
 # tester-2
-# blackjack
-# blackjack-test
+17:36: 100% battery
