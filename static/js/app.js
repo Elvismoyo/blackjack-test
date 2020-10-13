@@ -97,23 +97,29 @@ rpsFrontEnd = (human, bot, finalMessage) => {
 // Challenge 4: Change the Color of All Buttons
 
 var btns = document.getElementsByTagName('button');
+ 
 
 var copyBtns = [];
 
 for (let i=0; i < btns.length; i++){
-    copyBtns.push(btns[i].classList[1]);
+
+    copyBtns.push(btns[i].classList[1])
 }
-
-
-
+console.log(copyBtns)
+console.log(btns.length)
+btns[7].classList.add('btn-success');
+btns[7].classList.remove(btns[7].classList[1]);
+console.log(btns[7].classList[2])
 const btnsColorChange = (e) =>{
    
     if(e.value=="green"){
         btnsGreen();
+        
         return;
     }
     if(e.value=="red"){
         btnsRed();
+        console.log(btns[8].classList);
         return;
     }
     if(e.value=="reset"){
@@ -150,8 +156,12 @@ const btnsRandom = () =>{
 
 const btnsReset = () =>{
     for(let i=0; i<btns.length; i++){
+        
         btns[i].classList.remove(btns[i].classList[1]);   
         btns[i].classList.add(copyBtns[i]);
+        
+        
+
     }
 }
 
